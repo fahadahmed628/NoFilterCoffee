@@ -49,7 +49,10 @@
             android:name="com.example.nofiltercoffee.LoginActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name="com.example.nofiltercoffee.HomeActivity" />
-        <activity android:name="com.example.nofiltercoffee.ManagerOrdersActivity" /> <!-- new manager screen -->
+        <activity android:name="com.example.nofiltercoffee.ManagerOrdersActivity" />
+
+        <!-- ✅ NEW: SearchActivity -->
+        <activity android:name="com.example.nofiltercoffee.SearchActivity" />
         <activity
             android:name="com.example.nofiltercoffee.SplashActivity"
             android:exported="true" >

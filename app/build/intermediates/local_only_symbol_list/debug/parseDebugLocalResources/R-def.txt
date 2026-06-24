@@ -60,6 +60,7 @@ id edtExpiry
 id edtName
 id edtPassword
 id edtPhone
+id edtSearch
 id homeContent
 id homeScrollView
 id navAbout
@@ -83,7 +84,6 @@ id rvCategories
 id rvProducts
 id rvSearchResults
 id rvSuggestions
-id searchInput
 id switchBeans
 id switchWallet
 id txtBadge

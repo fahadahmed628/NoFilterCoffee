@@ -1,6 +1,5 @@
 package com.example.nofiltercoffee;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -10,60 +9,63 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class SearchActivity extends AppCompatActivity {
-    EditText searchInput;
-    RecyclerView recyclerView;
-    ProductAdapter adapter;
-    ArrayList<Product> allProducts;
-    ArrayList<Product> filteredProducts;
+
+    private EditText searchInput;
+    private RecyclerView searchResults;
+    private ProductAdapter adapter;
+    private ArrayList<Product> allProducts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
 
-        searchInput = findViewById(R.id.searchInput);
-        recyclerView = findViewById(R.id.rvSearchResults);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-        // Load all products from SampleData
-        allProducts = SampleData.products();
-        filteredProducts = new ArrayList<>(allProducts);
-
-        adapter = new ProductAdapter(this, filteredProducts, () -> { /* optional cart refresh */ });
-        recyclerView.setAdapter(adapter);
-
         // Back button
         findViewById(R.id.btnBack).setOnClickListener(v -> finish());
 
-        // Search filter
+        searchInput = findViewById(R.id.edtSearch);
+        searchResults = findViewById(R.id.rvSearchResults);
+
+        // Load all products from SampleData
+        allProducts = SampleData.products();
+
+        // Setup RecyclerView
+        searchResults.setLayoutManager(new LinearLayoutManager(this));
+        adapter = new ProductAdapter(this, new ArrayList<>(allProducts), () -> {});
+        searchResults.setAdapter(adapter);
+
+        // Search listener
         searchInput.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {}
-
-            @Override
-            public void afterTextChanged(Editable s) {
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
                 filter(s.toString());
             }
+
+            @Override
+            public void afterTextChanged(Editable s) {}
         });
     }
 
     private void filter(String query) {
-        filteredProducts.clear();
-        if (query.isEmpty()) {
-            filteredProducts.addAll(allProducts);
+        ArrayList<Product> filtered = new ArrayList<>();
+        if (query.trim().isEmpty()) {
+            filtered.addAll(allProducts);
         } else {
-            String lower = query.toLowerCase();
+            String lowerQuery = query.toLowerCase(Locale.getDefault());
             for (Product p : allProducts) {
-                if (p.name.toLowerCase().contains(lower) || p.description.toLowerCase().contains(lower)) {
-                    filteredProducts.add(p);
+                if (p.name.toLowerCase(Locale.getDefault()).contains(lowerQuery) ||
+                        p.description.toLowerCase(Locale.getDefault()).contains(lowerQuery) ||
+                        p.category.toLowerCase(Locale.getDefault()).contains(lowerQuery)) {
+                    filtered.add(p);
                 }
             }
         }
-        adapter.notifyDataSetChanged();
+        adapter.update(filtered);
     }
 }

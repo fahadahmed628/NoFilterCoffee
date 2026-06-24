@@ -3292,6 +3292,7 @@ id edtExpiry
 id edtName
 id edtPassword
 id edtPhone
+id edtSearch
 id elastic
 id embed
 id end
@@ -3507,7 +3508,6 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
-id searchInput
 id search_badge
 id search_bar
 id search_bar_text_view
