@@ -1,0 +1,2 @@
+package com.example.nofiltercoffee; import android.os.*; import android.widget.*; import androidx.appcompat.app.*;
+public class HelpActivity extends AppCompatActivity{protected void onCreate(Bundle b){super.onCreate(b);setContentView(R.layout.simple_page);findViewById(R.id.btnBack).setOnClickListener(v->finish());((TextView)findViewById(R.id.txtTitle)).setText("Help & Support");((TextView)findViewById(R.id.txtBody)).setText("Support feature will be connected later.\n\nFor now, this screen is a placeholder for contact, order issues, refunds, and FAQ.");}}

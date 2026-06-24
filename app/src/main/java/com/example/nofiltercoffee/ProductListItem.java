@@ -1,0 +1,1 @@
+package com.example.nofiltercoffee; public class ProductListItem { public static final int TYPE_HEADER=0, TYPE_PRODUCT=1; public int type; public String categoryTitle; public Product product; public ProductListItem(String title){type=TYPE_HEADER;categoryTitle=title;} public ProductListItem(Product product){type=TYPE_PRODUCT;this.product=product;} }

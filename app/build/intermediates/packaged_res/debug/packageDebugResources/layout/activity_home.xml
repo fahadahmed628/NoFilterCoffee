@@ -1,0 +1,279 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/rootHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_app_gradient"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- top bar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp">
+                <TextView
+                    android:id="@+id/txtMenu"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_card_dark_small"
+                    android:gravity="center"
+                    android:text="☰"
+                    android:textColor="@color/cream"
+                    android:textSize="26sp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:text="No Filter Coffee"
+                    android:textColor="@color/soft_white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txtSearch"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/bg_card_dark_small"
+                    android:gravity="center"
+                    android:text="⌕"
+                    android:textColor="@color/cream"
+                    android:textSize="28sp"/>
+            </LinearLayout>
+
+            <!-- categories -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCategories"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:clipToPadding="false"
+                android:background="@color/espresso_bg"
+                android:overScrollMode="never"/>
+
+            <!-- main scroll -->
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/homeScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clipToPadding="false"
+                android:paddingBottom="110dp">
+
+                <LinearLayout
+                    android:id="@+id/homeContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="20dp"
+                    android:paddingBottom="24dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Your coffee, no filter."
+                        android:textColor="@color/soft_white"
+                        android:textSize="34sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Order ahead, earn Coffee Beans, and repeat your usual."
+                        android:textColor="@color/muted_text"
+                        android:textSize="15sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginTop="22dp"
+                        android:background="@drawable/bg_card_dark"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_badge"
+                            android:paddingHorizontal="12dp"
+                            android:paddingVertical="6dp"
+                            android:text="Fresh"
+                            android:textColor="@color/soft_white"/>
+                        <TextView
+                            android:id="@+id/txtHeroTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="Coffee at its finest"
+                            android:textColor="@color/soft_white"
+                            android:textSize="24sp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Fresh brews, matcha and bakery specials."
+                            android:textColor="@color/muted_text"/>
+                        <TextView
+                            android:id="@+id/btnHero"
+                            android:layout_width="130dp"
+                            android:layout_height="46dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/bg_button_primary"
+                            android:gravity="center"
+                            android:text="Order now"
+                            android:textColor="@color/soft_white"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <!-- Quick actions removed -->
+
+                    <TextView
+                        android:id="@+id/txtMenuTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="Menu"
+                        android:textColor="@color/soft_white"
+                        android:textSize="24sp"
+                        android:textStyle="bold"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvProducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:nestedScrollingEnabled="false"
+                        android:overScrollMode="never"/>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+        <!-- bottom cart -->
+        <LinearLayout
+            android:id="@+id/bottomCart"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/bg_bottom_cart"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="22dp">
+            <TextView
+                android:id="@+id/txtCartCount"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/bg_circle_caramel"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/soft_white"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_weight="1"
+                android:text="View cart"
+                android:textColor="@color/espresso_bg"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txtCartTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. 0"
+                android:textColor="@color/espresso_bg"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- drawer -->
+    <ScrollView
+        android:id="@+id/drawerPanel"
+        android:layout_width="310dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/espresso_bg_2"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <TextView
+                android:id="@+id/drawerClose"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="end"
+                android:background="@drawable/bg_card_dark_small"
+                android:gravity="center"
+                android:text="×"
+                android:textColor="@color/cream"
+                android:textSize="28sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="No Filter Coffee"
+                android:textColor="@color/soft_white"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/drawerBeans"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_card_dark_small"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="14dp"
+                android:text="☕ 0 Coffee Beans"
+                android:textColor="@color/cream"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/navOrders"
+                style="@style/DrawerItem"
+                android:text="My Orders"/>
+            <TextView
+                android:id="@+id/navPayment"
+                style="@style/DrawerItem"
+                android:text="Payment Methods"/>
+            <TextView
+                android:id="@+id/navProfile"
+                style="@style/DrawerItem"
+                android:text="Profile"/>
+            <!-- Rewards added -->
+            <TextView
+                android:id="@+id/navRewards"
+                style="@style/DrawerItem"
+                android:text="Rewards"/>
+            <TextView
+                android:id="@+id/navSupport"
+                style="@style/DrawerItem"
+                android:text="Help &amp; Support"/>
+            <TextView
+                android:id="@+id/navAbout"
+                style="@style/DrawerItem"
+                android:text="About No Filter"/>
+            <TextView
+                android:id="@+id/navLogout"
+                style="@style/DrawerItem"
+                android:text="Sign out"
+                android:textColor="@color/caramel"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>

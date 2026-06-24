@@ -1,0 +1,2 @@
+package com.example.nofiltercoffee; import android.os.*; import android.widget.*; import androidx.appcompat.app.*;
+public class RewardsActivity extends AppCompatActivity{protected void onCreate(Bundle b){super.onCreate(b);setContentView(R.layout.activity_rewards);findViewById(R.id.btnBack).setOnClickListener(v->finish());((TextView)findViewById(R.id.txtBeansBalance)).setText(UserSession.getCoffeeBeans(this)+"\nCoffee Beans");}}

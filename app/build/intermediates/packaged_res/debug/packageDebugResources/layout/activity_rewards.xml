@@ -1,0 +1,55 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_gradient"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_card_dark_small"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="@color/cream"
+            android:textSize="34sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Coffee Beans Rewards"
+            android:textColor="@color/soft_white"
+            android:textSize="34sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtBeansBalance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_card_dark"
+            android:gravity="center"
+            android:padding="22dp"
+            android:textColor="@color/cream"
+            android:textSize="42sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_card_dark"
+            android:lineSpacingExtra="8dp"
+            android:padding="20dp"
+            android:text="What are Coffee Beans?\n\nCoffee Beans are reward points you earn after ordering from No Filter Coffee. Every new account starts with 0 Coffee Beans.\n\nHow do you earn them?\n\nYou earn 10% of your order subtotal as Coffee Beans. Example: subtotal Rs. 2000 gives 200 Coffee Beans.\n\nHow do you use them?\n\nOn the cart screen, turn on Use Coffee Beans. Your available beans reduce your payable bill.\n\nWhat do they do?\n\nThey work like app reward credit for coffee, bakery items, desserts, sandwiches, and future app-only drops."
+            android:textColor="@color/soft_white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</ScrollView>

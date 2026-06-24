@@ -1,0 +1,190 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootCheckout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_gradient"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_card_dark_small"
+            android:gravity="center"
+            android:text="‹"
+            android:textColor="@color/cream"
+            android:textSize="34sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Checkout"
+            android:textColor="@color/soft_white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtCustomerDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_card_dark"
+            android:lineSpacingExtra="7dp"
+            android:padding="16dp"
+            android:textColor="@color/soft_white"/>
+
+        <TextView
+            android:id="@+id/txtPickupLocation"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_card_dark"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:text="Pick-up from\nNo Filter Coffee, DHA Phase 6"
+            android:textColor="@color/soft_white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Payment method"
+            android:textColor="@color/cream"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/btnCashPayment"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_selected"
+                android:gravity="center"
+                android:text="Cash on pickup\nTax 16%"
+                android:textColor="@color/espresso_bg"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/btnCardPayment"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_chip_unselected"
+                android:gravity="center"
+                android:text="Card on delivery\nTax 5%"
+                android:textColor="@color/cream"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_card_dark"
+            android:lineSpacingExtra="8dp"
+            android:padding="18dp"
+            android:textColor="@color/soft_white"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:id="@+id/cardForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_card_dark"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="gone">
+            <EditText
+                android:id="@+id/edtCardHolder"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/bg_input"
+                android:hint="Card holder name"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/soft_white"
+                android:textColorHint="@color/muted_text"/>
+            <EditText
+                android:id="@+id/edtCardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_input"
+                android:digits="0123456789 "
+                android:hint="1234 5678 9876 5432"
+                android:inputType="number"
+                android:maxLength="19"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/soft_white"
+                android:textColorHint="@color/muted_text"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtExpiry"
+                    android:layout_width="0dp"
+                    android:layout_height="54dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_input"
+                    android:digits="0123456789/"
+                    android:hint="07/27"
+                    android:inputType="phone"
+                    android:maxLength="5"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/soft_white"
+                    android:textColorHint="@color/muted_text"/>
+                <EditText
+                    android:id="@+id/edtCvv"
+                    android:layout_width="0dp"
+                    android:layout_height="54dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_input"
+                    android:hint="CVV"
+                    android:inputType="numberPassword"
+                    android:maxLength="3"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/soft_white"
+                    android:textColorHint="@color/muted_text"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtCardError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/danger_red"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_button_primary"
+            android:gravity="center"
+            android:text="Confirm order"
+            android:textColor="@color/soft_white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</ScrollView>

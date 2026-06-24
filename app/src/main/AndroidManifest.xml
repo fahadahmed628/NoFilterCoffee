@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nofiltercoffee">
+
+    <application
+        android:allowBackup="true"
+        android:label="No Filter Coffee"
+        android:theme="@style/Theme.NoFilterCoffee"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".OrderSuccessActivity" />
+        <activity android:name=".CheckoutActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".PromoActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".ProductDetailActivity" />
+        <activity android:name=".RewardsActivity" />
+        <activity android:name=".OrdersActivity" />
+        <activity android:name=".PaymentMethodsActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".SignupActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".LoginActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".ManagerOrdersActivity" />   <!-- new manager screen -->
+        <activity android:name=".SplashActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
