@@ -79,7 +79,7 @@ public class ProductDetailActivity extends AppCompatActivity {
 
     private void showSize() {
         String[] a = {"Small (- Rs. 100)", "Regular (+ Rs. 0)", "Large (+ Rs. 150)"};
-        new AlertDialog.Builder(this)
+        new AlertDialog.Builder(this, R.style.BrownDialogTheme)
                 .setTitle("Select size")
                 .setItems(a, (d, w) -> {
                     selectedSize = w == 0 ? "Small" : w == 1 ? "Regular" : "Large";
@@ -92,7 +92,7 @@ public class ProductDetailActivity extends AppCompatActivity {
 
     private void showSweet() {
         String[] a = {"No sugar", "Less sweet", "Normal", "Extra sweet"};
-        new AlertDialog.Builder(this)
+        new AlertDialog.Builder(this, R.style.BrownDialogTheme)
                 .setTitle("Select sweetness")
                 .setItems(a, (d, w) -> {
                     selectedSweet = a[w];
@@ -104,7 +104,7 @@ public class ProductDetailActivity extends AppCompatActivity {
 
     private void showIce() {
         String[] a = {"No ice", "Less ice", "Normal ice", "Extra ice"};
-        new AlertDialog.Builder(this)
+        new AlertDialog.Builder(this, R.style.BrownDialogTheme)
                 .setTitle("Select ice")
                 .setItems(a, (d, w) -> {
                     selectedIce = a[w].replace(" ice", "");

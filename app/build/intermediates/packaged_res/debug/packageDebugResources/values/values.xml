@@ -21,6 +21,16 @@
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAQdAKSosuYiNOi8ur94gmgykHdG_7FtkI</string>
     <string name="google_storage_bucket" translatable="false">nofiltercoffee-dc249.firebasestorage.app</string>
     <string name="project_id" translatable="false">nofiltercoffee-dc249</string>
+    <style name="BrownDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="android:textColorPrimary">@color/cream</item>
+        <item name="colorAccent">@color/caramel</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
     <style name="DrawerItem">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">54dp</item>

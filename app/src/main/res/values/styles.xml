@@ -1,4 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- Main App Theme -->
     <style name="Theme.NoFilterCoffee" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:windowLightStatusBar">false</item>
@@ -6,6 +9,8 @@
         <item name="android:navigationBarColor">@color/espresso_bg</item>
         <item name="colorAccent">@color/caramel</item>
     </style>
+
+    <!-- Drawer Item Style -->
     <style name="DrawerItem">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">54dp</item>
@@ -18,4 +23,17 @@
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+    <!-- Custom Dialog Theme (Brown + Caramel) -->
+    <style name="BrownDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+        <item name="android:textColorPrimary">@color/cream</item>
+        <item name="colorAccent">@color/caramel</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
 </resources>

@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-main-37:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-debug-35:\\drawable_bg_badge.xml.flat",
-        "source": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-main-37:\\drawable\\bg_badge.xml"
-    },
-    {
         "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-debug-35:\\drawable_no_filter_placeholder.xml.flat",
         "source": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-main-37:\\drawable\\no_filter_placeholder.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-debug-35:\\drawable_bg_badge.xml.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-main-37:\\drawable\\bg_badge.xml"
     },
     {
         "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-debug-35:\\layout_item_product.xml.flat",
@@ -42,10 +42,6 @@
     {
         "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-debug-35:\\layout_item_category.xml.flat",
         "source": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-main-37:\\layout\\item_category.xml"
-    },
-    {
-        "merged": "com.example.nofiltercoffee.app-debug-35:/drawable_bg_badge_discount.xml.flat",
-        "source": "com.example.nofiltercoffee.app-main-37:/drawable/bg_badge_discount.xml"
     },
     {
         "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-debug-35:\\layout_activity_rewards.xml.flat",
@@ -134,6 +130,10 @@
     {
         "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-debug-35:\\layout_activity_promo.xml.flat",
         "source": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-main-37:\\layout\\activity_promo.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-debug-35:/drawable_dialog_background.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-37:/drawable/dialog_background.xml"
     },
     {
         "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-debug-35:\\layout_activity_signup.xml.flat",

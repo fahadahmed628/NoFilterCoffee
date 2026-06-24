@@ -2981,6 +2981,7 @@ int drawable design_ic_visibility 0x7f0700a2
 int drawable design_ic_visibility_off 0x7f0700a3
 int drawable design_password_eye 0x7f0700a4
 int drawable design_snackbar_background 0x7f0700a5
+int drawable dialog_background 0x7f070106
 int drawable googleg_disabled_color_18 0x7f0700a6
 int drawable googleg_standard_color_18 0x7f0700a7
 int drawable ic_arrow_back_black_24 0x7f0700a8
@@ -4378,6 +4379,7 @@ int style Base_Widget_MaterialComponents_Snackbar 0x7f100115
 int style Base_Widget_MaterialComponents_TextInputEditText 0x7f100116
 int style Base_Widget_MaterialComponents_TextInputLayout 0x7f100117
 int style Base_Widget_MaterialComponents_TextView 0x7f100118
+int style BrownDialogTheme 0x7f10044f
 int style CardView 0x7f100119
 int style CardView_Dark 0x7f10011a
 int style CardView_Light 0x7f10011b
