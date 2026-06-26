@@ -1,8 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Main background & surface -->
     <color name="espresso_bg">#120C08</color>
     <color name="espresso_bg_2">#1A120D</color>
+
+    <!-- Card backgrounds -->
     <color name="card_dark">#241A14</color>
     <color name="card_dark_2">#2E2118</color>
+
+    <!-- Text & accent -->
     <color name="cream">#F4E8D1</color>
     <color name="cream_2">#E8D7B8</color>
     <color name="caramel">#C88745</color>
@@ -12,4 +18,7 @@
     <color name="muted_text">#B8A99A</color>
     <color name="danger_red">#D84B45</color>
     <color name="line_dark">#3A2B21</color>
+
+    <!-- Button text on caramel background (dark brown) -->
+    <color name="button_primary_text">#120C08</color>
 </resources>

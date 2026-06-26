@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+color button_primary_text
 color caramel
 color caramel_dark
 color card_dark
@@ -38,6 +39,7 @@ id btnCardPayment
 id btnCashPayment
 id btnCheckout
 id btnConfirm
+id btnDelete
 id btnGoLogin
 id btnGoSignup
 id btnHero
@@ -70,6 +72,7 @@ id navPayment
 id navProfile
 id navRewards
 id navSupport
+id quantitySelector
 id rootCart
 id rootCheckout
 id rootHome
@@ -86,6 +89,7 @@ id rvSearchResults
 id rvSuggestions
 id switchBeans
 id switchWallet
+id tvQuantity
 id txtBadge
 id txtBeansBalance
 id txtBody
@@ -97,7 +101,6 @@ id txtCustomerDetails
 id txtCustomizeTitle
 id txtDesc
 id txtDescription
-id txtDiscountBadge
 id txtDiscountPercent
 id txtEmptyCart
 id txtError
@@ -110,7 +113,6 @@ id txtMenuTitle
 id txtName
 id txtOptions
 id txtOrderId
-id txtOriginalPrice
 id txtOriginalPriceDetail
 id txtPickupLocation
 id txtPickupTime

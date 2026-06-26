@@ -1354,6 +1354,7 @@ color browser_actions_text_color
 color browser_actions_title_color
 color button_material_dark
 color button_material_light
+color button_primary_text
 color call_notification_answer_color
 color call_notification_decline_color
 color caramel
@@ -3194,6 +3195,7 @@ id btnCardPayment
 id btnCashPayment
 id btnCheckout
 id btnConfirm
+id btnDelete
 id btnGoLogin
 id btnGoSignup
 id btnHero
@@ -3474,6 +3476,7 @@ id postLayout
 id pressed
 id progress_circular
 id progress_horizontal
+id quantitySelector
 id radio
 id ratio
 id rectangles
@@ -3621,6 +3624,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvQuantity
 id txtBadge
 id txtBeansBalance
 id txtBody
@@ -3632,7 +3636,6 @@ id txtCustomerDetails
 id txtCustomizeTitle
 id txtDesc
 id txtDescription
-id txtDiscountBadge
 id txtDiscountPercent
 id txtEmptyCart
 id txtError
@@ -3645,7 +3648,6 @@ id txtMenuTitle
 id txtName
 id txtOptions
 id txtOrderId
-id txtOriginalPrice
 id txtOriginalPriceDetail
 id txtPickupLocation
 id txtPickupTime

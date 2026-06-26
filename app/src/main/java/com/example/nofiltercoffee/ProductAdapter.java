@@ -2,10 +2,10 @@ package com.example.nofiltercoffee;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
@@ -32,20 +32,11 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.VH> {
         Product p = list.get(position);
         h.name.setText(p.name);
         h.desc.setText(p.description);
+        h.price.setText("from Rs. " + p.price);
         h.badge.setText(p.badge);
 
-        if (p.isDeal()) {
-            h.originalPrice.setVisibility(View.VISIBLE);
-            h.originalPrice.setText("Rs. " + p.originalPrice);
-            h.originalPrice.setPaintFlags(h.originalPrice.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-            h.price.setText("Rs. " + p.price);
-            h.discountBadge.setVisibility(View.VISIBLE);
-            h.discountBadge.setText("Save " + p.discountPercent + "%");
-        } else {
-            h.originalPrice.setVisibility(View.GONE);
-            h.discountBadge.setVisibility(View.GONE);
-            h.price.setText("from Rs. " + p.price);
-        }
+        int quantity = getProductQuantity(p);
+        updateQuantityUI(h, quantity);
 
         h.root.setOnClickListener(v -> {
             Intent i = new Intent(context, ProductDetailActivity.class);
@@ -53,10 +44,75 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.VH> {
             context.startActivity(i);
         });
 
-        h.add.setOnClickListener(v -> {
+        // Add button (+)
+        h.btnAdd.setOnClickListener(v -> {
             CartManager.add(p);
-            cartCallback.run();
+            if (cartCallback != null) cartCallback.run();
+            notifyDataSetChanged();
         });
+
+        // Plus in selector
+        h.btnPlus.setOnClickListener(v -> {
+            CartManager.add(p);
+            if (cartCallback != null) cartCallback.run();
+            notifyDataSetChanged();
+        });
+
+        // Minus in selector
+        h.btnMinus.setOnClickListener(v -> {
+            for (CartItem item : CartManager.getCart()) {
+                if (item.product.id.equals(p.id)) {
+                    CartManager.decrease(item);
+                    break;
+                }
+            }
+            if (cartCallback != null) cartCallback.run();
+            notifyDataSetChanged();
+        });
+
+        // Delete/Trash
+        h.btnDelete.setOnClickListener(v -> {
+            ArrayList<CartItem> cart = CartManager.getCart();
+            ArrayList<CartItem> toRemove = new ArrayList<>();
+            for (CartItem item : cart) {
+                if (item.product.id.equals(p.id)) {
+                    toRemove.add(item);
+                }
+            }
+            for (CartItem item : toRemove) {
+                cart.remove(item);
+            }
+            if (cartCallback != null) cartCallback.run();
+            notifyDataSetChanged();
+        });
+    }
+
+    private int getProductQuantity(Product p) {
+        int total = 0;
+        for (CartItem item : CartManager.getCart()) {
+            if (item.product.id.equals(p.id)) {
+                total += item.quantity;
+            }
+        }
+        return total;
+    }
+
+    private void updateQuantityUI(VH h, int qty) {
+        if (qty == 0) {
+            h.btnAdd.setVisibility(View.VISIBLE);
+            h.quantitySelector.setVisibility(View.GONE);
+        } else {
+            h.btnAdd.setVisibility(View.GONE);
+            h.quantitySelector.setVisibility(View.VISIBLE);
+            h.tvQuantity.setText(String.valueOf(qty));
+            if (qty == 1) {
+                h.btnDelete.setVisibility(View.VISIBLE);
+                h.btnMinus.setVisibility(View.GONE);
+            } else {
+                h.btnDelete.setVisibility(View.GONE);
+                h.btnMinus.setVisibility(View.VISIBLE);
+            }
+        }
     }
 
     @Override
@@ -72,7 +128,12 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.VH> {
 
     static class VH extends RecyclerView.ViewHolder {
         View root;
-        TextView name, desc, price, badge, add, originalPrice, discountBadge;
+        TextView name, desc, price, badge;
+        TextView btnAdd;
+        View quantitySelector;
+        ImageView btnDelete;
+        TextView btnMinus, btnPlus, tvQuantity;
+
         VH(View v) {
             super(v);
             root = v.findViewById(R.id.rootProduct);
@@ -80,9 +141,12 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.VH> {
             desc = v.findViewById(R.id.txtDescription);
             price = v.findViewById(R.id.txtPrice);
             badge = v.findViewById(R.id.txtBadge);
-            add = v.findViewById(R.id.btnAdd);
-            originalPrice = v.findViewById(R.id.txtOriginalPrice);
-            discountBadge = v.findViewById(R.id.txtDiscountBadge);
+            btnAdd = v.findViewById(R.id.btnAdd);
+            quantitySelector = v.findViewById(R.id.quantitySelector);
+            btnDelete = v.findViewById(R.id.btnDelete);
+            btnMinus = v.findViewById(R.id.btnMinus);
+            btnPlus = v.findViewById(R.id.btnPlus);
+            tvQuantity = v.findViewById(R.id.tvQuantity);
         }
     }
 }
