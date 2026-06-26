@@ -52,18 +52,29 @@ public class SectionedProductAdapter extends RecyclerView.Adapter<RecyclerView.V
 
         x.root.setOnClickListener(v -> open(pr));
 
+        // Add button (+) - uses requiresCustomization()
         x.btnAdd.setOnClickListener(v -> {
-            CartManager.add(pr);
-            if (cb != null) cb.run();
-            notifyDataSetChanged();
+            if (ProductUtils.requiresCustomization(pr.category)) {
+                open(pr);
+            } else {
+                CartManager.add(pr);
+                if (cb != null) cb.run();
+                notifyDataSetChanged();
+            }
         });
 
+        // Plus in selector
         x.btnPlus.setOnClickListener(v -> {
-            CartManager.add(pr);
-            if (cb != null) cb.run();
-            notifyDataSetChanged();
+            if (ProductUtils.requiresCustomization(pr.category)) {
+                open(pr);
+            } else {
+                CartManager.add(pr);
+                if (cb != null) cb.run();
+                notifyDataSetChanged();
+            }
         });
 
+        // Minus in selector
         x.btnMinus.setOnClickListener(v -> {
             for (CartItem item : CartManager.getCart()) {
                 if (item.product.id.equals(pr.id)) {
@@ -75,6 +86,7 @@ public class SectionedProductAdapter extends RecyclerView.Adapter<RecyclerView.V
             notifyDataSetChanged();
         });
 
+        // Delete/Trash
         x.btnDelete.setOnClickListener(v -> {
             ArrayList<CartItem> cart = CartManager.getCart();
             ArrayList<CartItem> toRemove = new ArrayList<>();

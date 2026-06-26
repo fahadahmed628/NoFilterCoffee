@@ -35,18 +35,33 @@ public class SuggestionAdapter extends RecyclerView.Adapter<SuggestionAdapter.VH
         int quantity = getProductQuantity(pr);
         updateQuantityUI(h, quantity);
 
+        // Add button - uses requiresCustomization()
         h.btnAdd.setOnClickListener(v -> {
-            CartManager.add(pr);
-            if (cb != null) cb.run();
-            notifyDataSetChanged();
+            if (ProductUtils.requiresCustomization(pr.category)) {
+                Intent in = new Intent(c, ProductDetailActivity.class);
+                in.putExtra("product", pr);
+                c.startActivity(in);
+            } else {
+                CartManager.add(pr);
+                if (cb != null) cb.run();
+                notifyDataSetChanged();
+            }
         });
 
+        // Plus in selector
         h.btnPlus.setOnClickListener(v -> {
-            CartManager.add(pr);
-            if (cb != null) cb.run();
-            notifyDataSetChanged();
+            if (ProductUtils.requiresCustomization(pr.category)) {
+                Intent in = new Intent(c, ProductDetailActivity.class);
+                in.putExtra("product", pr);
+                c.startActivity(in);
+            } else {
+                CartManager.add(pr);
+                if (cb != null) cb.run();
+                notifyDataSetChanged();
+            }
         });
 
+        // Minus in selector
         h.btnMinus.setOnClickListener(v -> {
             for (CartItem item : CartManager.getCart()) {
                 if (item.product.id.equals(pr.id)) {
@@ -58,6 +73,7 @@ public class SuggestionAdapter extends RecyclerView.Adapter<SuggestionAdapter.VH
             notifyDataSetChanged();
         });
 
+        // Delete/Trash
         h.btnDelete.setOnClickListener(v -> {
             ArrayList<CartItem> cart = CartManager.getCart();
             ArrayList<CartItem> toRemove = new ArrayList<>();

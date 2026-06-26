@@ -44,18 +44,30 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.VH> {
             context.startActivity(i);
         });
 
-        // Add button (+)
+        // Add button (+) - uses requiresCustomization()
         h.btnAdd.setOnClickListener(v -> {
-            CartManager.add(p);
-            if (cartCallback != null) cartCallback.run();
-            notifyDataSetChanged();
+            if (ProductUtils.requiresCustomization(p.category)) {
+                Intent i = new Intent(context, ProductDetailActivity.class);
+                i.putExtra("product", p);
+                context.startActivity(i);
+            } else {
+                CartManager.add(p);
+                if (cartCallback != null) cartCallback.run();
+                notifyDataSetChanged();
+            }
         });
 
         // Plus in selector
         h.btnPlus.setOnClickListener(v -> {
-            CartManager.add(p);
-            if (cartCallback != null) cartCallback.run();
-            notifyDataSetChanged();
+            if (ProductUtils.requiresCustomization(p.category)) {
+                Intent i = new Intent(context, ProductDetailActivity.class);
+                i.putExtra("product", p);
+                context.startActivity(i);
+            } else {
+                CartManager.add(p);
+                if (cartCallback != null) cartCallback.run();
+                notifyDataSetChanged();
+            }
         });
 
         // Minus in selector

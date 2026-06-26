@@ -41,7 +41,8 @@ public class ProductDetailActivity extends AppCompatActivity {
 
         setup();
         btn.setOnClickListener(v -> {
-            if (ProductUtils.isDrink(product.category)) {
+            // ✅ Use requiresCustomization() instead of isDrink()
+            if (ProductUtils.requiresCustomization(product.category)) {
                 if (selectedSize.isEmpty() || selectedSweet.isEmpty() || selectedIce.isEmpty()) {
                     warn.setVisibility(View.VISIBLE);
                     return;
@@ -56,7 +57,8 @@ public class ProductDetailActivity extends AppCompatActivity {
     }
 
     private void setup() {
-        if (ProductUtils.isDrink(product.category)) {
+        // ✅ Use requiresCustomization() to show/hide customization UI
+        if (ProductUtils.requiresCustomization(product.category)) {
             title.setVisibility(View.VISIBLE);
             size.setVisibility(View.VISIBLE);
             sweet.setVisibility(View.VISIBLE);
