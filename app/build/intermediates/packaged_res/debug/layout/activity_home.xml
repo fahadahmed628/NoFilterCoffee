@@ -84,9 +84,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
-                        android:text="Your coffee, no filter."
+                        android:text="Life happens, coffee helps."
                         android:textColor="@color/soft_white"
-                        android:textSize="34sp"
+                        android:textSize="30sp"
                         android:textStyle="bold"/>
 
                     <TextView
