@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="152dp"
-    android:layout_height="168dp"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
     android:layout_marginEnd="12dp"
     android:background="@drawable/bg_card_dark"
     android:orientation="vertical"
-    android:padding="12dp">
+    android:padding="12dp"
+    android:minHeight="190dp">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@drawable/no_filter_placeholder" />
+        android:layout_height="80dp"
+        android:background="@drawable/no_filter_placeholder"
+        android:scaleType="centerCrop" />
 
     <TextView
         android:id="@+id/txtName"
@@ -19,6 +21,7 @@
         android:layout_marginTop="8dp"
         android:maxLines="1"
         android:textColor="@color/cream"
+        android:textSize="14sp"
         android:textStyle="bold" />
 
     <TextView
@@ -26,25 +29,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:textColor="@color/muted_text" />
+        android:textColor="@color/muted_text"
+        android:textSize="13sp" />
 
     <!-- "+" Add Button -->
     <TextView
         android:id="@+id/btnAdd"
         android:layout_width="match_parent"
-        android:layout_height="34dp"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_button_primary"
         android:gravity="center"
         android:text="Add"
         android:textColor="@color/button_primary_text"
-        android:textStyle="bold" />
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:paddingVertical="4dp" />
 
     <!-- Quantity Selector -->
     <LinearLayout
         android:id="@+id/quantitySelector"
         android:layout_width="match_parent"
-        android:layout_height="34dp"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_card_dark_small"
         android:gravity="center"
@@ -53,42 +59,42 @@
 
         <ImageView
             android:id="@+id/btnDelete"
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:padding="4dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="6dp"
             android:src="@android:drawable/ic_menu_delete"
             android:tint="@color/danger_red"
             android:visibility="gone" />
 
         <TextView
             android:id="@+id/btnMinus"
-            android:layout_width="28dp"
+            android:layout_width="32dp"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="−"
             android:textColor="@color/caramel"
-            android:textSize="18sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             android:visibility="gone" />
 
         <TextView
             android:id="@+id/tvQuantity"
-            android:layout_width="28dp"
+            android:layout_width="32dp"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="1"
             android:textColor="@color/cream"
-            android:textSize="14sp"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/btnPlus"
-            android:layout_width="28dp"
+            android:layout_width="32dp"
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="+"
             android:textColor="@color/caramel"
-            android:textSize="18sp"
+            android:textSize="22sp"
             android:textStyle="bold" />
     </LinearLayout>
 </LinearLayout>
