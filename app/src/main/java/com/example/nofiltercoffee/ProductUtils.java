@@ -12,9 +12,15 @@ public class ProductUtils {
         return category.equals("Hot Coffee") ||
                 category.equals("Iced Coffee") ||
                 category.equals("Matcha") ||
-                category.equals("Frappes");
+                category.equals("Frappes") ||
+                // New uppercase categories from SampleData
+                category.equals("COFFEE") ||
+                category.equals("LATTE") ||
+                category.equals("MATCHA") ||
+                category.equals("FRAPPE") ||
+                // ✅ Added "TEA & MORE" so all teas, shakes, etc. ask for customization
+                category.equals("TEA & MORE");
     }
-
 
     public static boolean isCombo(String category) {
         if (category == null) return false;
