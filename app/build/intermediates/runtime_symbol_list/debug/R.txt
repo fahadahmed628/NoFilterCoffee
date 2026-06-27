@@ -3233,6 +3233,7 @@ int id btnMinus 0x7f080078
 int id btnPlus 0x7f080079
 int id btnRemovePromo 0x7f08007a
 int id btnSignup 0x7f08007b
+int id btnTopUp 0x7f080260
 int id buttonPanel 0x7f08007c
 int id cache_measures 0x7f08007d
 int id callMeasure 0x7f08007e
@@ -3305,6 +3306,7 @@ int id dragUp 0x7f0800c0
 int id drawerBeans 0x7f0800c1
 int id drawerClose 0x7f0800c2
 int id drawerLayout 0x7f0800c3
+int id drawerMenu 0x7f080261
 int id drawerPanel 0x7f0800c4
 int id dropdown_menu 0x7f0800c5
 int id easeIn 0x7f0800c6
@@ -3323,6 +3325,7 @@ int id edtName 0x7f0800d2
 int id edtPassword 0x7f0800d3
 int id edtPhone 0x7f0800d4
 int id edtSearch 0x7f0800d5
+int id edtTopUpAmount 0x7f080262
 int id elastic 0x7f0800d6
 int id embed 0x7f0800d7
 int id end 0x7f0800d8
@@ -3462,6 +3465,7 @@ int id navPayment 0x7f08015d
 int id navProfile 0x7f08015e
 int id navRewards 0x7f08015f
 int id navSupport 0x7f080160
+int id navWallet 0x7f080263
 int id navigation_bar_item_active_indicator_view 0x7f080161
 int id navigation_bar_item_icon_container 0x7f080162
 int id navigation_bar_item_icon_view 0x7f080163
@@ -3654,6 +3658,7 @@ int id transition_scene_layoutid_cache 0x7f08021d
 int id transition_transform 0x7f08021e
 int id triangle 0x7f08021f
 int id tvQuantity 0x7f080220
+int id txtAmountError 0x7f080264
 int id txtBadge 0x7f080221
 int id txtBeansBalance 0x7f080222
 int id txtBody 0x7f080223
@@ -3845,6 +3850,7 @@ int layout activity_rewards 0x7f0b0025
 int layout activity_search 0x7f0b0026
 int layout activity_signup 0x7f0b0027
 int layout activity_splash 0x7f0b0028
+int layout activity_wallet 0x7f0b007f
 int layout browser_actions_context_menu_page 0x7f0b0029
 int layout browser_actions_context_menu_row 0x7f0b002a
 int layout custom_dialog 0x7f0b002b

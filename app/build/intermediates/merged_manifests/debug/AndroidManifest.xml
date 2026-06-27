@@ -51,8 +51,7 @@
             android:name="com.example.nofiltercoffee.LoginActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name="com.example.nofiltercoffee.HomeActivity" />
-        <activity android:name="com.example.nofiltercoffee.ManagerOrdersActivity" />
-
+        <activity android:name="com.example.nofiltercoffee.WalletActivity" />
         <!-- ✅ NEW: SearchActivity -->
         <activity android:name="com.example.nofiltercoffee.SearchActivity" />
         <activity

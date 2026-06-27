@@ -28,6 +28,10 @@
         "source": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-main-44:\\drawable\\no_filter_placeholder.xml"
     },
     {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_activity_wallet.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/activity_wallet.xml"
+    },
+    {
         "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-merged_res-42:\\drawable_bg_circle_caramel.xml.flat",
         "source": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-main-44:\\drawable\\bg_circle_caramel.xml"
     },
@@ -42,6 +46,10 @@
     {
         "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-merged_res-42:\\drawable_bg_card_dark.xml.flat",
         "source": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-main-44:\\drawable\\bg_card_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-merged_res-42:\\layout_activity_wallet.xml.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-main-44:\\layout\\activity_wallet.xml"
     },
     {
         "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-merged_res-42:\\layout_item_cart.xml.flat",
@@ -64,20 +72,16 @@
         "source": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-main-44:\\drawable\\dialog_background.xml"
     },
     {
-        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_item_suggestion.xml.flat",
-        "source": "com.example.nofiltercoffee.app-main-44:/layout/item_suggestion.xml"
-    },
-    {
         "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-merged_res-42:\\layout_item_section_header.xml.flat",
         "source": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-main-44:\\layout\\item_section_header.xml"
     },
     {
-        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-merged_res-42:\\layout_activity_cart.xml.flat",
-        "source": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-main-44:\\layout\\activity_cart.xml"
-    },
-    {
         "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-merged_res-42:\\layout_item_suggestion.xml.flat",
         "source": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-main-44:\\layout\\item_suggestion.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-merged_res-42:\\layout_activity_cart.xml.flat",
+        "source": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-main-44:\\layout\\activity_cart.xml"
     },
     {
         "merged": "C:\\Users\\Hp\\.gradle\\daemon\\8.9\\com.example.nofiltercoffee.app-merged_res-42:\\layout_activity_search.xml.flat",

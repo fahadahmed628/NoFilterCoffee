@@ -3234,6 +3234,7 @@ id btnMinus
 id btnPlus
 id btnRemovePromo
 id btnSignup
+id btnTopUp
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3306,6 +3307,7 @@ id dragUp
 id drawerBeans
 id drawerClose
 id drawerLayout
+id drawerMenu
 id drawerPanel
 id dropdown_menu
 id easeIn
@@ -3324,6 +3326,7 @@ id edtName
 id edtPassword
 id edtPhone
 id edtSearch
+id edtTopUpAmount
 id elastic
 id embed
 id end
@@ -3463,6 +3466,7 @@ id navPayment
 id navProfile
 id navRewards
 id navSupport
+id navWallet
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3655,6 +3659,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvQuantity
+id txtAmountError
 id txtBadge
 id txtBeansBalance
 id txtBody
@@ -3846,6 +3851,7 @@ layout activity_rewards
 layout activity_search
 layout activity_signup
 layout activity_splash
+layout activity_wallet
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog

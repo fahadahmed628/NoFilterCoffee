@@ -48,10 +48,12 @@ id btnMinus
 id btnPlus
 id btnRemovePromo
 id btnSignup
+id btnTopUp
 id cardForm
 id drawerBeans
 id drawerClose
 id drawerLayout
+id drawerMenu
 id drawerPanel
 id edtCardHolder
 id edtCardNumber
@@ -63,6 +65,7 @@ id edtName
 id edtPassword
 id edtPhone
 id edtSearch
+id edtTopUpAmount
 id homeContent
 id homeScrollView
 id navAbout
@@ -72,6 +75,7 @@ id navPayment
 id navProfile
 id navRewards
 id navSupport
+id navWallet
 id quantitySelector
 id rootCart
 id rootCheckout
@@ -90,6 +94,7 @@ id rvSuggestions
 id switchBeans
 id switchWallet
 id tvQuantity
+id txtAmountError
 id txtBadge
 id txtBeansBalance
 id txtBody
@@ -142,6 +147,7 @@ layout activity_rewards
 layout activity_search
 layout activity_signup
 layout activity_splash
+layout activity_wallet
 layout item_cart
 layout item_category
 layout item_product

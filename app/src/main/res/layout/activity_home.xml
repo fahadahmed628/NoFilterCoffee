@@ -211,6 +211,7 @@
         android:background="@color/espresso_bg_2"
         android:fitsSystemWindows="true">
         <LinearLayout
+            android:id="@+id/drawerMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -261,6 +262,13 @@
                 android:id="@+id/navRewards"
                 style="@style/DrawerItem"
                 android:text="Rewards"/>
+
+            <!-- ✅ Wallet added here -->
+            <TextView
+                android:id="@+id/navWallet"
+                style="@style/DrawerItem"
+                android:text="Wallet"/>
+
             <TextView
                 android:id="@+id/navSupport"
                 style="@style/DrawerItem"
