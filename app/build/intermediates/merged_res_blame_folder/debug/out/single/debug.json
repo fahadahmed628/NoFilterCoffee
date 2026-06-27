@@ -1,0 +1,142 @@
+[
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_activity_login.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/drawable_bg_button_outline.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/drawable/bg_button_outline.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_activity_signup.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/activity_signup.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/drawable_bg_card_dark.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/drawable/bg_card_dark.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_activity_orders.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/activity_orders.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/drawable_bg_chip_selected.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/drawable/bg_chip_selected.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_item_category.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/item_category.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/drawable_no_filter_placeholder.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/drawable/no_filter_placeholder.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_activity_cart.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/activity_cart.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_activity_order_success.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/activity_order_success.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_activity_checkout.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/activity_checkout.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/drawable_bg_circle_caramel.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/drawable/bg_circle_caramel.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_activity_rewards.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/activity_rewards.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_item_quick_action.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/item_quick_action.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_item_suggestion.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/item_suggestion.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_activity_search.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/activity_search.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_item_cart.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/item_cart.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/drawable_dialog_background.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/drawable/dialog_background.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_item_product.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/item_product.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_activity_promo.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/activity_promo.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_item_section_header.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/item_section_header.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_simple_page.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/simple_page.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/drawable_bg_badge_discount.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/drawable/bg_badge_discount.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_activity_profile.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/activity_profile.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/drawable_bg_input.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/drawable/bg_input.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/drawable_bg_card_dark_small.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/drawable/bg_card_dark_small.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_activity_splash.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_activity_home.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/activity_home.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/drawable_bg_circle_cream.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/drawable/bg_circle_cream.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/drawable_bg_button_primary.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/drawable/bg_button_primary.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/drawable_bg_app_gradient.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/drawable/bg_app_gradient.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/drawable_bg_badge.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/drawable/bg_badge.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/layout_activity_product_detail.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/layout/activity_product_detail.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/drawable_bg_bottom_cart.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/drawable/bg_bottom_cart.xml"
+    },
+    {
+        "merged": "com.example.nofiltercoffee.app-merged_res-42:/drawable_bg_chip_unselected.xml.flat",
+        "source": "com.example.nofiltercoffee.app-main-44:/drawable/bg_chip_unselected.xml"
+    }
+]
