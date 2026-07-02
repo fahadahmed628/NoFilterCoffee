@@ -105,7 +105,7 @@ public class ProductDetailActivity extends AppCompatActivity {
     }
 
     private void showIce() {
-        String[] a = {"No ice", "Less ice", "Normal ice", "Extra ice"};
+        String[] a = {"Over iced", "Blended"};
         new AlertDialog.Builder(this, R.style.BrownDialogTheme)
                 .setTitle("Select ice")
                 .setItems(a, (d, w) -> {

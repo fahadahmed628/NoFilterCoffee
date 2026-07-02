@@ -85,7 +85,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/bg_chip_unselected"
                 android:gravity="center"
-                android:text="Card on delivery\nTax 5%"
+                android:text="Card on pickup\nTax 5%"
                 android:textColor="@color/cream"
                 android:textStyle="bold"/>
         </LinearLayout>
